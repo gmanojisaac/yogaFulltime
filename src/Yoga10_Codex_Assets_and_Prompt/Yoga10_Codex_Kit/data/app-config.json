@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "appName": "Yoga10",
+  "characterName": "Aadi",
+  "locale": "en-IN",
+  "defaultTimeZone": "Asia/Kolkata",
+  "defaultStartTime": "08:00",
+  "dayWindowMinutes": 600,
+  "hoursPerDay": 10,
+  "checkpointSpacingMinutes": 5,
+  "gradesCount": 10,
+  "totalHours": 100,
+  "checkpointsPerGrade": 120,
+  "totalCheckpoints": 1200,
+  "allowPause": true,
+  "allowSkip": true,
+  "advanceOnClock": false,
+  "description": "Ten grades of illustrated learning. Each day has ten hourly learning blocks with recovery and normal activities between brief optional attempts.",
+  "safety": {
+    "gradeIsNotCalendarDay": true,
+    "instructorReviewRequiredBeforePublicInstruction": true,
+    "masteryIsNotCompletion": true,
+    "supervisedGrades": [
+      9,
+      10
+    ],
+    "notice": "Use comfortable ranges. Stop for pain or dizziness. Learn advanced preparation with a qualified teacher.",
+    "referenceUrl": "https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety"
+  },
+  "art": {
+    "format": "static_png_atlases",
+    "rigged3D": false,
+    "poseAnimationIncluded": false,
+    "identity": "Original adult South Asian male character in a polished 3D animated film style."
+  }
+}

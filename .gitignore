@@ -3,6 +3,9 @@ node_modules/
 .env.*
 !.env.example
 coverage/
+dist/
+.sites-runtime/
+test-results/
 *.log
 .DS_Store
 Thumbs.db

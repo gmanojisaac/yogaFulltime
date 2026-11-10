@@ -2,16 +2,38 @@
   "name": "yoga-fulltime",
   "version": "1.0.0",
   "private": true,
-  "description": "A minimal Node.js starter for Yoga Fulltime.",
+  "description": "Yoga10 — a local-first illustrated yoga learning companion.",
   "type": "module",
-  "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "node --watch src/server.js",
-    "test": "node --test"
+    "start": "vite --host 127.0.0.1",
+    "dev": "vite --host 127.0.0.1",
+    "validate:content": "node scripts/validate-content.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run validate:content && npm run typecheck && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@js-temporal/polyfill": "^0.5.1",
+    "lucide-react": "^1.71.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.9",
+    "@types/node": "^20.19.43",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "jsdom": "^26.1.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.7",
+    "vitest": "^4.1.12"
   },
   "engines": {
-    "node": ">=20.19.0"
+    "node": "^20.19.0 || >=22.12.0"
   },
   "repository": {
     "type": "git",

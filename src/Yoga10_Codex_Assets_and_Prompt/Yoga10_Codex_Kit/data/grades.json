@@ -1,0 +1,282 @@
+[
+  {
+    "id": "g01",
+    "number": 1,
+    "title": "Calm foundations",
+    "objective": "Find comfortable rest, posture and breathing.",
+    "poseIds": [
+      "easy-seat",
+      "mountain",
+      "supine-rest"
+    ],
+    "hourIds": [
+      "g01-h01",
+      "g01-h02",
+      "g01-h03",
+      "g01-h04",
+      "g01-h05",
+      "g01-h06",
+      "g01-h07",
+      "g01-h08",
+      "g01-h09",
+      "g01-h10"
+    ],
+    "hoursPerDay": 10,
+    "checkpointCount": 120,
+    "supervisionRequired": false,
+    "advancement": "Repeat this grade until the movements are comfortable, controlled and repeatable. A teacher should assess advanced readiness.",
+    "prerequisiteGradeId": null
+  },
+  {
+    "id": "g02",
+    "number": 2,
+    "title": "Gentle spine",
+    "objective": "Explore gentle spinal movement with control.",
+    "poseIds": [
+      "tabletop",
+      "cat",
+      "cow"
+    ],
+    "hourIds": [
+      "g02-h01",
+      "g02-h02",
+      "g02-h03",
+      "g02-h04",
+      "g02-h05",
+      "g02-h06",
+      "g02-h07",
+      "g02-h08",
+      "g02-h09",
+      "g02-h10"
+    ],
+    "hoursPerDay": 10,
+    "checkpointCount": 120,
+    "supervisionRequired": false,
+    "advancement": "Repeat this grade until the movements are comfortable, controlled and repeatable. A teacher should assess advanced readiness.",
+    "prerequisiteGradeId": "g01"
+  },
+  {
+    "id": "g03",
+    "number": 3,
+    "title": "Standing support",
+    "objective": "Use stable supports for standing alignment.",
+    "poseIds": [
+      "half-fold",
+      "heel-raise",
+      "wall-tree"
+    ],
+    "hourIds": [
+      "g03-h01",
+      "g03-h02",
+      "g03-h03",
+      "g03-h04",
+      "g03-h05",
+      "g03-h06",
+      "g03-h07",
+      "g03-h08",
+      "g03-h09",
+      "g03-h10"
+    ],
+    "hoursPerDay": 10,
+    "checkpointCount": 120,
+    "supervisionRequired": false,
+    "advancement": "Repeat this grade until the movements are comfortable, controlled and repeatable. A teacher should assess advanced readiness.",
+    "prerequisiteGradeId": "g02"
+  },
+  {
+    "id": "g04",
+    "number": 4,
+    "title": "Standing poses",
+    "objective": "Learn comfortable leg and arm alignment.",
+    "poseIds": [
+      "warrior-ii",
+      "side-angle",
+      "triangle"
+    ],
+    "hourIds": [
+      "g04-h01",
+      "g04-h02",
+      "g04-h03",
+      "g04-h04",
+      "g04-h05",
+      "g04-h06",
+      "g04-h07",
+      "g04-h08",
+      "g04-h09",
+      "g04-h10"
+    ],
+    "hoursPerDay": 10,
+    "checkpointCount": 120,
+    "supervisionRequired": false,
+    "advancement": "Repeat this grade until the movements are comfortable, controlled and repeatable. A teacher should assess advanced readiness.",
+    "prerequisiteGradeId": "g03"
+  },
+  {
+    "id": "g05",
+    "number": 5,
+    "title": "Floor strength",
+    "objective": "Coordinate limbs while keeping the trunk steady.",
+    "poseIds": [
+      "bird-dog",
+      "knee-plank",
+      "boat-prep"
+    ],
+    "hourIds": [
+      "g05-h01",
+      "g05-h02",
+      "g05-h03",
+      "g05-h04",
+      "g05-h05",
+      "g05-h06",
+      "g05-h07",
+      "g05-h08",
+      "g05-h09",
+      "g05-h10"
+    ],
+    "hoursPerDay": 10,
+    "checkpointCount": 120,
+    "supervisionRequired": false,
+    "advancement": "Repeat this grade until the movements are comfortable, controlled and repeatable. A teacher should assess advanced readiness.",
+    "prerequisiteGradeId": "g04"
+  },
+  {
+    "id": "g06",
+    "number": 6,
+    "title": "Gentle backbends",
+    "objective": "Explore small backbends with easy breathing.",
+    "poseIds": [
+      "sphinx",
+      "cobra",
+      "bridge"
+    ],
+    "hourIds": [
+      "g06-h01",
+      "g06-h02",
+      "g06-h03",
+      "g06-h04",
+      "g06-h05",
+      "g06-h06",
+      "g06-h07",
+      "g06-h08",
+      "g06-h09",
+      "g06-h10"
+    ],
+    "hoursPerDay": 10,
+    "checkpointCount": 120,
+    "supervisionRequired": false,
+    "advancement": "Repeat this grade until the movements are comfortable, controlled and repeatable. A teacher should assess advanced readiness.",
+    "prerequisiteGradeId": "g05"
+  },
+  {
+    "id": "g07",
+    "number": 7,
+    "title": "Hip mobility",
+    "objective": "Explore comfortable hip movement with props.",
+    "poseIds": [
+      "butterfly",
+      "figure-four",
+      "low-lunge"
+    ],
+    "hourIds": [
+      "g07-h01",
+      "g07-h02",
+      "g07-h03",
+      "g07-h04",
+      "g07-h05",
+      "g07-h06",
+      "g07-h07",
+      "g07-h08",
+      "g07-h09",
+      "g07-h10"
+    ],
+    "hoursPerDay": 10,
+    "checkpointCount": 120,
+    "supervisionRequired": false,
+    "advancement": "Repeat this grade until the movements are comfortable, controlled and repeatable. A teacher should assess advanced readiness.",
+    "prerequisiteGradeId": "g06"
+  },
+  {
+    "id": "g08",
+    "number": 8,
+    "title": "Balance and reach",
+    "objective": "Practise balance with a dependable support.",
+    "poseIds": [
+      "chair",
+      "warrior-iii",
+      "dancer-prep"
+    ],
+    "hourIds": [
+      "g08-h01",
+      "g08-h02",
+      "g08-h03",
+      "g08-h04",
+      "g08-h05",
+      "g08-h06",
+      "g08-h07",
+      "g08-h08",
+      "g08-h09",
+      "g08-h10"
+    ],
+    "hoursPerDay": 10,
+    "checkpointCount": 120,
+    "supervisionRequired": false,
+    "advancement": "Repeat this grade until the movements are comfortable, controlled and repeatable. A teacher should assess advanced readiness.",
+    "prerequisiteGradeId": "g07"
+  },
+  {
+    "id": "g09",
+    "number": 9,
+    "title": "Teacher-guided preparation",
+    "objective": "Study wrist, shoulder and kneeling preparation with a teacher.",
+    "poseIds": [
+      "dolphin",
+      "crow-grounded",
+      "kneeling-setup"
+    ],
+    "hourIds": [
+      "g09-h01",
+      "g09-h02",
+      "g09-h03",
+      "g09-h04",
+      "g09-h05",
+      "g09-h06",
+      "g09-h07",
+      "g09-h08",
+      "g09-h09",
+      "g09-h10"
+    ],
+    "hoursPerDay": 10,
+    "checkpointCount": 120,
+    "supervisionRequired": true,
+    "advancement": "Repeat this grade until the movements are comfortable, controlled and repeatable. A teacher should assess advanced readiness.",
+    "prerequisiteGradeId": "g08"
+  },
+  {
+    "id": "g10",
+    "number": 10,
+    "title": "Supervised integration",
+    "objective": "Combine teacher-selected preparation and review individual readiness.",
+    "poseIds": [
+      "wall-press",
+      "half-split",
+      "knee-side-plank"
+    ],
+    "hourIds": [
+      "g10-h01",
+      "g10-h02",
+      "g10-h03",
+      "g10-h04",
+      "g10-h05",
+      "g10-h06",
+      "g10-h07",
+      "g10-h08",
+      "g10-h09",
+      "g10-h10"
+    ],
+    "hoursPerDay": 10,
+    "checkpointCount": 120,
+    "supervisionRequired": true,
+    "advancement": "Repeat this grade until the movements are comfortable, controlled and repeatable. A teacher should assess advanced readiness.",
+    "prerequisiteGradeId": "g09"
+  }
+]

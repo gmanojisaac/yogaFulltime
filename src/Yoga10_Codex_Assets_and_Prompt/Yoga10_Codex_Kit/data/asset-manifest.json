@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 1,
+  "atlases": [
+    {
+      "id": "poses-01",
+      "path": "/assets/characters/poses-01.png",
+      "width": 1536,
+      "height": 1024,
+      "grid": {
+        "columns": 3,
+        "rows": 2
+      },
+      "sha256": "1579a3458d95f0b4c56731fbfdfba727b264b84426aaabcaad05f3076e5bfc6f",
+      "type": "static_illustration_atlas",
+      "background": "warm off-white, opaque",
+      "source": "Generated with the built-in image generation tool"
+    },
+    {
+      "id": "poses-02",
+      "path": "/assets/characters/poses-02.png",
+      "width": 1536,
+      "height": 1024,
+      "grid": {
+        "columns": 3,
+        "rows": 2
+      },
+      "sha256": "556d06a2e44382e697e364245e374276456f4824e17d65b3c9de03943d93bd8d",
+      "type": "static_illustration_atlas",
+      "background": "warm off-white, opaque",
+      "source": "Generated with the built-in image generation tool"
+    },
+    {
+      "id": "poses-03",
+      "path": "/assets/characters/poses-03.png",
+      "width": 1536,
+      "height": 1024,
+      "grid": {
+        "columns": 3,
+        "rows": 2
+      },
+      "sha256": "6fcb095eed66e5c38290ae225def83cbbb5db36220f2bd7af95ec6f994d5b541",
+      "type": "static_illustration_atlas",
+      "background": "warm off-white, opaque",
+      "source": "Generated with the built-in image generation tool"
+    },
+    {
+      "id": "poses-04",
+      "path": "/assets/characters/poses-04.png",
+      "width": 1536,
+      "height": 1024,
+      "grid": {
+        "columns": 3,
+        "rows": 2
+      },
+      "sha256": "a86924cf4a1e061d4809db85abe5117b3cd0ed672ca761eb5b5678c71fe08016",
+      "type": "static_illustration_atlas",
+      "background": "warm off-white, opaque",
+      "source": "Generated with the built-in image generation tool"
+    },
+    {
+      "id": "poses-05",
+      "path": "/assets/characters/poses-05.png",
+      "width": 1536,
+      "height": 1024,
+      "grid": {
+        "columns": 3,
+        "rows": 2
+      },
+      "sha256": "9b89fdf337bc909e71205ca782a16552129c04610ec5a19a2f6495119eb3b946",
+      "type": "static_illustration_atlas",
+      "background": "warm off-white, opaque",
+      "source": "Generated with the built-in image generation tool"
+    }
+  ],
+  "poseAssets": [
+    {
+      "id": "easy-seat",
+      "atlas": "/assets/characters/poses-01.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 0,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "0% 0%",
+      "alt": "3D animated-style yoga character demonstrating easy seated breathing."
+    },
+    {
+      "id": "mountain",
+      "atlas": "/assets/characters/poses-01.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 1,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "50% 0%",
+      "alt": "3D animated-style yoga character demonstrating mountain."
+    },
+    {
+      "id": "supine-rest",
+      "atlas": "/assets/characters/poses-01.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 2,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "100% 0%",
+      "alt": "3D animated-style yoga character demonstrating bent-knee rest."
+    },
+    {
+      "id": "tabletop",
+      "atlas": "/assets/characters/poses-01.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 0,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "0% 100%",
+      "alt": "3D animated-style yoga character demonstrating tabletop."
+    },
+    {
+      "id": "cat",
+      "atlas": "/assets/characters/poses-01.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 1,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "50% 100%",
+      "alt": "3D animated-style yoga character demonstrating gentle cat."
+    },
+    {
+      "id": "cow",
+      "atlas": "/assets/characters/poses-01.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 2,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "100% 100%",
+      "alt": "3D animated-style yoga character demonstrating gentle cow."
+    },
+    {
+      "id": "half-fold",
+      "atlas": "/assets/characters/poses-02.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 0,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "0% 0%",
+      "alt": "3D animated-style yoga character demonstrating chair-supported half-fold."
+    },
+    {
+      "id": "heel-raise",
+      "atlas": "/assets/characters/poses-02.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 1,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "50% 0%",
+      "alt": "3D animated-style yoga character demonstrating supported heel raise."
+    },
+    {
+      "id": "wall-tree",
+      "atlas": "/assets/characters/poses-02.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 2,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "100% 0%",
+      "alt": "3D animated-style yoga character demonstrating supported tree preparation."
+    },
+    {
+      "id": "warrior-ii",
+      "atlas": "/assets/characters/poses-02.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 0,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "0% 100%",
+      "alt": "3D animated-style yoga character demonstrating warrior ii."
+    },
+    {
+      "id": "side-angle",
+      "atlas": "/assets/characters/poses-02.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 1,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "50% 100%",
+      "alt": "3D animated-style yoga character demonstrating supported side angle."
+    },
+    {
+      "id": "triangle",
+      "atlas": "/assets/characters/poses-02.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 2,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "100% 100%",
+      "alt": "3D animated-style yoga character demonstrating triangle with block."
+    },
+    {
+      "id": "bird-dog",
+      "atlas": "/assets/characters/poses-03.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 0,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "0% 0%",
+      "alt": "3D animated-style yoga character demonstrating bird dog."
+    },
+    {
+      "id": "knee-plank",
+      "atlas": "/assets/characters/poses-03.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 1,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "50% 0%",
+      "alt": "3D animated-style yoga character demonstrating knees-down plank."
+    },
+    {
+      "id": "boat-prep",
+      "atlas": "/assets/characters/poses-03.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 2,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "100% 0%",
+      "alt": "3D animated-style yoga character demonstrating bent-knee boat preparation."
+    },
+    {
+      "id": "sphinx",
+      "atlas": "/assets/characters/poses-03.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 0,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "0% 100%",
+      "alt": "3D animated-style yoga character demonstrating sphinx."
+    },
+    {
+      "id": "cobra",
+      "atlas": "/assets/characters/poses-03.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 1,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "50% 100%",
+      "alt": "3D animated-style yoga character demonstrating low cobra."
+    },
+    {
+      "id": "bridge",
+      "atlas": "/assets/characters/poses-03.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 2,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "100% 100%",
+      "alt": "3D animated-style yoga character demonstrating low bridge."
+    },
+    {
+      "id": "butterfly",
+      "atlas": "/assets/characters/poses-04.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 0,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "0% 0%",
+      "alt": "3D animated-style yoga character demonstrating supported butterfly."
+    },
+    {
+      "id": "figure-four",
+      "atlas": "/assets/characters/poses-04.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 1,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "50% 0%",
+      "alt": "3D animated-style yoga character demonstrating reclined figure four."
+    },
+    {
+      "id": "low-lunge",
+      "atlas": "/assets/characters/poses-04.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 2,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "100% 0%",
+      "alt": "3D animated-style yoga character demonstrating low lunge with blocks."
+    },
+    {
+      "id": "chair",
+      "atlas": "/assets/characters/poses-04.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 0,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "0% 100%",
+      "alt": "3D animated-style yoga character demonstrating shallow chair pose."
+    },
+    {
+      "id": "warrior-iii",
+      "atlas": "/assets/characters/poses-04.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 1,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "50% 100%",
+      "alt": "3D animated-style yoga character demonstrating supported warrior iii."
+    },
+    {
+      "id": "dancer-prep",
+      "atlas": "/assets/characters/poses-04.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 2,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "100% 100%",
+      "alt": "3D animated-style yoga character demonstrating supported dancer preparation."
+    },
+    {
+      "id": "dolphin",
+      "atlas": "/assets/characters/poses-05.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 0,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "0% 0%",
+      "alt": "3D animated-style yoga character demonstrating dolphin preparation."
+    },
+    {
+      "id": "crow-grounded",
+      "atlas": "/assets/characters/poses-05.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 1,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "50% 0%",
+      "alt": "3D animated-style yoga character demonstrating grounded squat for crow preparation."
+    },
+    {
+      "id": "kneeling-setup",
+      "atlas": "/assets/characters/poses-05.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 2,
+      "row": 0,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "100% 0%",
+      "alt": "3D animated-style yoga character demonstrating kneeling posture for backbend preparation."
+    },
+    {
+      "id": "wall-press",
+      "atlas": "/assets/characters/poses-05.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 0,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "0% 100%",
+      "alt": "3D animated-style yoga character demonstrating wall shoulder press."
+    },
+    {
+      "id": "half-split",
+      "atlas": "/assets/characters/poses-05.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 1,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "50% 100%",
+      "alt": "3D animated-style yoga character demonstrating half-split preparation."
+    },
+    {
+      "id": "knee-side-plank",
+      "atlas": "/assets/characters/poses-05.png",
+      "columns": 3,
+      "rows": 2,
+      "column": 2,
+      "row": 1,
+      "cellAspectRatio": 1,
+      "backgroundSize": "300% 200%",
+      "backgroundPosition": "100% 100%",
+      "alt": "3D animated-style yoga character demonstrating kneeling side plank."
+    }
+  ]
+}

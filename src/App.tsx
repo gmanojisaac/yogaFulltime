@@ -44,6 +44,7 @@ import {
   scheduleForCheckpoint,
 } from "./components";
 import { SessionPlayer } from "./SessionPlayer";
+import { CurriculumLadder, GradeChallengeInfo, MissionProgress, TechnicalOverview } from './ChallengeUI';
 import {
   counts,
   emptyProgress,
@@ -53,6 +54,7 @@ import {
   parseProgress,
   recordsFor,
   saveOutcome,
+  saveMissionEvidence,
   settingsSchema,
 } from "./core/progress";
 import type {
@@ -61,6 +63,7 @@ import type {
   Outcome,
   Progress,
   Settings,
+  MissionEvidence,
 } from "./core/progress";
 import {
   clock,
@@ -536,6 +539,14 @@ export default function App() {
       );
     }
   }
+  function recordMission(id: string, evidence: MissionEvidence, submit = false) {
+    timerAction('pause');
+    try {
+      editAttempt(a => saveMissionEvidence(a, id, evidence, submit));
+      if (submit) setMessage('Technical mission recorded. Your reasoning and task self-report are separate from physical readiness.');
+    } catch (error) { setMessage(error instanceof Error ? error.message : 'The mission could not be recorded.'); }
+  }
+  function openMission(hourId: string) { openCheckpoint(hourById[hourId].checkpointIds[10]); }
   function saveSettings(event: FormEvent) {
     event.preventDefault();
     const parsed = settingsSchema.safeParse(draft);
@@ -701,40 +712,41 @@ export default function App() {
             </span>
           </div>
           <div>
-            <p className="eyebrow">SMALL STEPS. YOUR OWN PACE.</p>
+            <p className="eyebrow">TEN STAGES · TECHNIQUE LAB</p>
             <h1>
-              A little more
+              Study every cue.
               <br />
-              comfortable,
+              Defend every
               <br />
-              <em>every day.</em>
+              <em>decision.</em>
             </h1>
             <p>
-              Meet Aadi, your illustrated companion for ten grades of gentle
-              yoga learning.
+              Progress from precise foundations to complex technical analysis
+              and teacher-guided synthesis through 100 scenario-driven missions.
             </p>
           </div>
           <div className="welcome-art">
             <PoseSprite pose={poseById["easy-seat"]} />
             <span className="aadi-tag">
               <span className="online-dot" />
-              <strong>Hello, I’m Aadi.</strong> Let’s take it gently.
+              <strong>Hello, I’m Aadi.</strong> Let’s work with intention.
             </span>
           </div>
           <p className="small">Private prototype · Draft learning content</p>
         </div>
         <section className="welcome-form">
           <Badge>
-            <Sparkles size={13} /> A LITTLE SPACE FOR YOU
+            <Sparkles size={13} /> TEN-GRADE TECHNIQUE LAB
           </Badge>
           <h2>
-            Make yourself
+            Set your
             <br />
-            at home.
+            study rhythm.
           </h2>
           <p>
-            Learn through 10 grades, each with 10 hourly blocks and 12 gentle
-            check-ins per hour. A grade can take as many days as you need.
+            Work through ten progressively demanding stages. Each grade has
+            ten technical missions, scenario decisions and written reflections.
+            Study at your pace; physical practice remains optional.
           </p>
           <LearningNotice />
           <form
@@ -809,7 +821,7 @@ export default function App() {
             <i>✦</i>
           </span>
         </a>
-        <span className="sidebar-caption">YOUR LEARNING SPACE</span>
+        <span className="sidebar-caption">TECHNIQUE LAB</span>
         <nav aria-label="Main navigation">
           {links.map(({ id, label, Icon }) => (
             <button
@@ -828,9 +840,9 @@ export default function App() {
           <div className="sidebar-companion">
             <PoseSprite pose={poseById["easy-seat"]} />
             <p>
-              Progress is personal.
+              Build precision.
               <br />
-              <strong>There’s no need to rush.</strong>
+              <strong>Defend your decisions.</strong>
             </p>
           </div>
           <div className="private-label">
@@ -842,7 +854,7 @@ export default function App() {
       <div className="main-shell">
         <header className="topbar">
           <span className="topbar-context">
-            <Sun size={18} />A little time for yourself
+            <Sun size={18} />Experienced practice · technical reasoning
           </span>
           <div>
             <span
@@ -898,12 +910,11 @@ export default function App() {
               <div className="page-heading heading-with-meta">
                 <div>
                   <p className="eyebrow">
-                    <Sun size={14} /> YOUR DAILY MOMENT
+                    <Sun size={14} /> YOUR TECHNIQUE LAB
                   </p>
-                  <h1>Welcome to your own pace.</h1>
+                  <h1>Your technique lab.</h1>
                   <p>
-                    A little learning, a little movement, and plenty of room to
-                    breathe.
+                    Build precision. Compare strategies. Make the reasoning visible.
                   </p>
                 </div>
                 <span className="date-label">
@@ -911,6 +922,7 @@ export default function App() {
                   {localDate(data.settings.timeZone)}
                 </span>
               </div>
+              <TechnicalOverview attempt={attempt} onOpen={openMission} />
               <section className="today-hero">
                 <div className="hero-copy">
                   <Badge gold>
@@ -918,7 +930,7 @@ export default function App() {
                     <span>·</span>{" "}
                     {grade.supervisionRequired
                       ? "TEACHER-GUIDED"
-                      : "YOUR LEARNING JOURNEY"}
+                      : "EXPERIENCED TRACK"}
                   </Badge>
                   <h2>
                     {grade.title === "Calm foundations" ? (
@@ -932,8 +944,8 @@ export default function App() {
                     )}
                   </h2>
                   <p>
-                    {grade.objective} Explore with Aadi through small,
-                    thoughtful steps.
+                    {grade.objective} Use observation, adaptation and clear
+                    reasoning; physical effort is always optional.
                   </p>
                   {attempt ? (
                     <ResumeButton
@@ -1098,12 +1110,12 @@ export default function App() {
             <>
               <div className="page-heading">
                 <p className="eyebrow">YOUR PATH</p>
-                <h1>Ten grades. No finish line.</h1>
+                <h1>Ten grades. A technical progression.</h1>
                 <p>
-                  Browse every lesson. Repeat any grade. Build comfort at a pace
-                  that belongs to you.
+                  100 distinct missions. 100 scenario checks. Build, compare and defend your technique decisions.
                 </p>
               </div>
+              <CurriculumLadder activeGrade={attempt?.gradeId ?? 'g01'} onSelect={id => { setViewGrade(id); navigate('detail'); }} />
               <LearningNotice />
               <div className="section-heading">
                 <Badge>10 GRADES · 100 HOURS · 1,200 CHECKPOINTS</Badge>
@@ -1162,6 +1174,7 @@ export default function App() {
                       </p>
                     </div>
                   )}
+                  <GradeChallengeInfo gradeId={g.id} />
                   <div className="pose-showcase">
                     {g.poseIds.map((id) => (
                       <article className="card" key={id}>
@@ -1308,6 +1321,7 @@ export default function App() {
               onRecord={record}
               onNext={nextCheckpoint}
               onRest={stopAndRest}
+              onMission={recordMission}
             />
           )}
           {screen === "timeline" && attempt && (
@@ -1343,6 +1357,7 @@ export default function App() {
               <ProgressSummary attempt={attempt} />
               {attempt ? (
                 <>
+                  <MissionProgress attempt={attempt} onOpen={openMission} />
                   <div className="progress-columns">
                     <section className="card journal-card">
                       <SectionHeading

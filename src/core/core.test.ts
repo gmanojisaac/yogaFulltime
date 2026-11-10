@@ -17,15 +17,23 @@ import {
 import {
   counts,
   emptyProgress,
+  emptyMissionEvidence,
   makeAttempt,
   makeDay,
   mergeProgress,
   parseProgress,
   recordsFor,
   restoreProgress,
+  saveMissionEvidence,
   saveOutcome,
   STORAGE_KEY,
 } from "./progress";
+import {
+  gradeProfiles,
+  missionByHour,
+  missionComplete,
+  missions,
+} from "../curriculum/challenges";
 import { loadProgress, writeProgress } from "./storage";
 
 function fixture() {
@@ -69,6 +77,30 @@ describe("supplied curriculum", () => {
     ).toBe(true);
     expect(new Set(checkpoints.map((c) => c.trialWindowSeconds))).toEqual(
       new Set([0, 60, 120]),
+    );
+  });
+  it("provides ten distinct, progressively structured missions for every grade", () => {
+    expect(gradeProfiles).toHaveLength(10);
+    expect(missions).toHaveLength(100);
+    expect(new Set(missions.map((mission) => mission.title)).size).toBe(100);
+    for (const profile of gradeProfiles) {
+      const gradeMissions = missions.filter(
+        (mission) => mission.gradeId === profile.gradeId,
+      );
+      expect(gradeMissions).toHaveLength(10);
+      expect(new Set(gradeMissions.map((mission) => mission.hour)).size).toBe(
+        10,
+      );
+      expect(profile.competencies).toHaveLength(3);
+      expect(gradeMissions.every((mission) => mission.tasks.length === 3)).toBe(
+        true,
+      );
+    }
+    expect(gradeProfiles.slice(0, 8).every((profile) => !profile.supervised)).toBe(
+      true,
+    );
+    expect(gradeProfiles.slice(8).every((profile) => profile.supervised)).toBe(
+      true,
     );
   });
 });
@@ -151,6 +183,73 @@ describe("explicit physical trials", () => {
   });
 });
 describe("progress and persistence", () => {
+  it("requires complete evidence and a correct scenario answer to record a mission", () => {
+    const state = fixture();
+    const attempt = state.attempts[0];
+    const mission = missionByHour["g01-h01"];
+    const draft = {
+      ...emptyMissionEvidence(),
+      checks: [true, true, true] as [boolean, boolean, boolean],
+      answer: mission.correctAnswer,
+      reflection:
+        "I observed my support, chose an adjustment, and noted a question.",
+    };
+
+    expect(missionComplete(draft, mission)).toBe(true);
+    expect(() =>
+      saveMissionEvidence(
+        attempt,
+        mission.id,
+        { ...draft, answer: (mission.correctAnswer + 1) % 3 },
+        true,
+      ),
+    ).toThrow(/correctly/);
+    expect(() =>
+      saveMissionEvidence(
+        attempt,
+        mission.id,
+        { ...draft, reflection: "Too short." },
+        true,
+      ),
+    ).toThrow(/40 characters/);
+
+    const recorded = saveMissionEvidence(attempt, mission.id, draft, true);
+    expect(recorded.missions[mission.id]?.completedAt).toBeTruthy();
+    expect(counts(recorded).missionsCompleted).toBe(1);
+    expect(saveMissionEvidence(recorded, mission.id, emptyMissionEvidence())).toBe(
+      recorded,
+    );
+    expect(
+      parseProgress(JSON.stringify({ ...state, attempts: [recorded] }))
+        .attempts[0].missions[mission.id]?.completedAt,
+    ).toBeTruthy();
+  });
+  it("migrates version-one progress while preserving its checkpoint history", () => {
+    const state = fixture();
+    const attempt = saveOutcome(
+      state.attempts[0],
+      "observed",
+      "Existing observation",
+      "observe",
+      false,
+    );
+    const legacy = structuredClone({ ...state, attempts: [attempt] });
+    Object.assign(legacy, { schemaVersion: 1 });
+    Reflect.deleteProperty(legacy.attempts[0], "missions");
+    Reflect.deleteProperty(
+      legacy.attempts[0].days[0].records[attempt.cursor],
+      "curriculumVersion",
+    );
+
+    const migrated = parseProgress(JSON.stringify(legacy));
+    expect(migrated.schemaVersion).toBe(2);
+    expect(migrated.attempts[0].missions).toEqual({});
+    expect(recordsFor(migrated.attempts[0])[attempt.cursor]).toMatchObject({
+      outcome: "observed",
+      note: "Existing observation",
+      curriculumVersion: 1,
+    });
+  });
   it("records outcomes once and keeps skips separate from completion", () => {
     const a = fixture().attempts[0];
     const skipped = saveOutcome(a, "skipped", "Rest day", "observe", false);

@@ -17,6 +17,7 @@ import type { Grade, Pose } from "./content";
 import { clock, elapsedLabel, scheduledInstant } from "./core/schedule";
 import { counts, recordsFor } from "./core/progress";
 import type { Attempt, CompletionRecord, LearningDay } from "./core/progress";
+import { profileByGrade } from './curriculum/challenges';
 
 export function Badge({
   children,
@@ -177,13 +178,14 @@ export function GradeCard({
         ))}
       </div>
       <h3>{grade.title}</h3>
+      <span className="grade-stage">{profileByGrade[grade.id].stage}</span>
       <p>{grade.objective}</p>
       {grade.supervisionRequired && (
         <span className="teacher-label">Teacher-guided preparation</span>
       )}
       <div className="grade-card-bottom">
         <span>{c.total}/120 recorded</span>
-        <span>10 learning hours</span>
+        <span>{c.missionsCompleted}/10 technical missions</span>
       </div>
       <div className="progress-track">
         <span style={{ width: `${(c.total / 120) * 100}%` }} />

@@ -1,0 +1,1047 @@
+{
+  "version": 2,
+  "profiles": [
+    {
+      "gradeId": "g01",
+      "stage": "Baseline precision",
+      "summary": "Audit support, axial organisation and breathing without relying on the picture or extra range.",
+      "prerequisite": "Experience with basic yoga positions and an ability to choose rest independently.",
+      "competencies": [
+        "Separate support from effort",
+        "Explain a cue from memory",
+        "Defend a modification"
+      ],
+      "supervised": false
+    },
+    {
+      "gradeId": "g02",
+      "stage": "Segmental control",
+      "summary": "Distinguish spinal movement, pelvic movement and neck compensation through controlled comparison.",
+      "prerequisite": "A repeatable baseline and a clear personal stop rule.",
+      "competencies": [
+        "Track where movement occurs",
+        "Identify a compensation",
+        "Reconstruct a movement sequence"
+      ],
+      "supervised": false
+    },
+    {
+      "gradeId": "g03",
+      "stage": "Load-transfer strategy",
+      "summary": "Analyse standing support, hip hinging and balance recovery while keeping dependable support.",
+      "prerequisite": "Comfort with supported standing and deliberate release.",
+      "competencies": [
+        "Map contact and load",
+        "Separate hinge from collapse",
+        "Plan a balance exit"
+      ],
+      "supervised": false
+    },
+    {
+      "gradeId": "g04",
+      "stage": "Multi-plane precision",
+      "summary": "Manage leg, pelvis, trunk and arm cues together without trading comfort for a deeper shape.",
+      "prerequisite": "Stable supported standing and the ability to explain two alignment priorities.",
+      "competencies": [
+        "Prioritise competing cues",
+        "Compare standing configurations",
+        "Justify support placement"
+      ],
+      "supervised": false
+    },
+    {
+      "gradeId": "g05",
+      "stage": "Contralateral coordination",
+      "summary": "Study how limb movement affects trunk control, leverage and the quality of an exit.",
+      "prerequisite": "Comfort with the supplied floor preparations and wrist/knee supports.",
+      "competencies": [
+        "Detect trunk substitution",
+        "Choose an appropriate lever",
+        "Explain a regression"
+      ],
+      "supervised": false
+    },
+    {
+      "gradeId": "g06",
+      "stage": "Extension discrimination",
+      "summary": "Compare small supported backbends, distinguishing distributed movement from local compression.",
+      "prerequisite": "Comfortable small-range backbend experience; discuss uncertainty with a qualified teacher.",
+      "competencies": [
+        "Distinguish lift from compression",
+        "Compare three support patterns",
+        "Defend a smaller range"
+      ],
+      "supervised": false
+    },
+    {
+      "gradeId": "g07",
+      "stage": "Asymmetry & adaptation",
+      "summary": "Analyse hip position, pelvic movement and side differences without forcing symmetry or range.",
+      "prerequisite": "An established habit of adapting positions and respecting side-to-side differences.",
+      "competencies": [
+        "Separate hip motion from substitution",
+        "Record bilateral evidence",
+        "Design side-specific supports"
+      ],
+      "supervised": false
+    },
+    {
+      "gradeId": "g08",
+      "stage": "Balance integration",
+      "summary": "Combine support, trunk organisation, controlled transitions and contingency planning.",
+      "prerequisite": "Reliable use of support and an exit plan before each balance attempt.",
+      "competencies": [
+        "Coordinate multiple priorities",
+        "Plan entry and recovery",
+        "Evaluate repeatability"
+      ],
+      "supervised": false
+    },
+    {
+      "gradeId": "g09",
+      "stage": "Advanced readiness analysis",
+      "summary": "Analyse arm-balance, shoulder and kneeling preparation through observation and teacher discussion.",
+      "prerequisite": "Bring prior notes and questions to a qualified teacher. App progress does not establish readiness.",
+      "competencies": [
+        "Differentiate preparation from a full skill",
+        "Analyse load prerequisites",
+        "Ask evidence-based teacher questions"
+      ],
+      "supervised": true
+    },
+    {
+      "gradeId": "g10",
+      "stage": "Supervised synthesis",
+      "summary": "Defend an individualised sequence, adaptations and coaching decisions in a teacher-guided capstone.",
+      "prerequisite": "Qualified teacher participation for readiness decisions and any advanced progression.",
+      "competencies": [
+        "Adapt a sequence to a case",
+        "Explain trade-offs",
+        "Build a defensible learning plan"
+      ],
+      "supervised": true
+    }
+  ],
+  "missions": {
+    "g01": [
+      [
+        "Support before effort",
+        "In easy seat, identify which contacts support your weight and which muscles you are unnecessarily bracing. Explain one support change using the supplied cues.",
+        "Your seated posture looks upright, but your jaw and shoulders are braced. What is the better next experiment?",
+        "Adjust support and reduce unnecessary effort.",
+        "Brace harder to keep the outline exact.",
+        "Extend the attempt until tension disappears.",
+        "A visual outline does not establish useful control. Change support or effort, then observe comfort."
+      ],
+      [
+        "A one-variable comparison",
+        "Compare your usual seat with one comfortable support adjustment. Keep the task brief; describe what changed in effort rather than which looked more advanced.",
+        "What makes a support comparison interpretable?",
+        "Change one factor and record its effect.",
+        "Change height, leg position and breathing together.",
+        "Choose the position with the deepest shape.",
+        "One changed factor makes the observation easier to interpret; appearance is not the outcome."
+      ],
+      [
+        "Reconstruct the seated setup",
+        "Without looking at the cue list, explain setup, an alignment priority, a release and a fallback. Then reopen the cues and identify a missing detail.",
+        "A recall exercise reveals a missing release step. What should you do?",
+        "Review and include a controlled exit before attempting.",
+        "Treat entry as sufficient preparation.",
+        "Use a longer hold to memorise the setup.",
+        "Recall tests understanding, not endurance. Release and fallback are part of the plan."
+      ],
+      [
+        "Standing baseline audit",
+        "For Mountain, distinguish foot contact, knee softness and shoulder effort. Name which observation comes from sensation and which only from an image.",
+        "Which report separates observation from assumption?",
+        "I notice foot pressure; a teacher would need to assess my alignment.",
+        "The illustration proves my joints are aligned.",
+        "Standing still proves readiness for advanced balances.",
+        "Sensory observations and visual examples are different kinds of evidence."
+      ],
+      [
+        "Two-cue attention",
+        "During a brief optional Mountain attempt, attend to even weight and soft knees together. If attention becomes strained, simplify rather than increasing duration.",
+        "A second cue makes you stiffen and hold your breath. How should the task change?",
+        "Return to one cue or rest.",
+        "Keep both cues and suppress the urge to breathe.",
+        "Add a third cue to improve concentration.",
+        "Difficulty comes from clear attention; excessive bracing is a reason to simplify."
+      ],
+      [
+        "Explain the trade-off",
+        "Defend a comfortable standing modification. State what it helps you notice and what the illustration cannot tell you about your own readiness.",
+        "Why can a supported modification be a demanding technical choice?",
+        "It can isolate a specific learning objective.",
+        "It automatically proves the original pose is mastered.",
+        "It must be removed before a grade can be completed.",
+        "Support can make a technical question more precise without making a mastery claim."
+      ],
+      [
+        "Rest as an observable skill",
+        "Study bent-knee rest. Identify a comfortable setup, a sign of unnecessary effort and the release sequence. Compare resting with merely freezing in place.",
+        "Which observation best fits recovery?",
+        "Breathing is unforced and I can change position comfortably.",
+        "I remain perfectly still regardless of discomfort.",
+        "A longer rest makes later positions compulsory.",
+        "Comfortable recovery allows movement and choice; stillness is not the goal by itself."
+      ],
+      [
+        "Design a transition on paper",
+        "Write the stages for leaving bent-knee rest using the supplied release cue. Identify where you would pause and how you would avoid rushing.",
+        "What belongs in an exit plan from bent-knee rest?",
+        "A side roll before slowly sitting up, if comfortable.",
+        "A fast sit-up to test strength.",
+        "A rule to remain still until the next clock checkpoint.",
+        "The supplied exit uses a side roll and a gradual return; the schedule is not a movement command."
+      ],
+      [
+        "Cross-position cue audit",
+        "Compare easy seat, Mountain and rest: identify a shared breathing principle and a support requirement that changes. Defend why one cue cannot describe all three setups.",
+        "Which principle transfers across these three positions?",
+        "Normal unforced breathing, with position-specific support.",
+        "Identical joint angles in every position.",
+        "Continuous abdominal bracing in every position.",
+        "A shared breathing principle does not erase differences in support and position."
+      ],
+      [
+        "Foundation case defence",
+        "Create a written three-position learning plan with setup, one technical objective per position, a fallback and a release. Include a reason to repeat this grade.",
+        "What would justify repeating this grade?",
+        "A useful question or an inconsistent setup remains.",
+        "Only an incomplete clock window.",
+        "A failure to reach a prescribed stretch depth.",
+        "Repeating can address uncertainty; time and depth do not establish readiness."
+      ]
+    ],
+    "g02": [
+      [
+        "Neutral is an investigation",
+        "Audit Tabletop using the written neutral-spine cue. Identify the mild extension in the illustration and explain why copying it exactly may miss the learning objective.",
+        "The Tabletop image and written neutral cue differ. Which takes priority for this draft lesson?",
+        "The written cue and qualified teacher review.",
+        "The image because every generated detail is validated.",
+        "Whichever shape requires the greatest effort.",
+        "The kit explicitly flags mild extension in this image; it is a draft reference."
+      ],
+      [
+        "Contact and substitution",
+        "Map hand and knee support in Tabletop. Explain how a support or padding change could affect your ability to notice trunk effort without prescribing a larger range.",
+        "Wrist discomfort disrupts your attention. What is the next step?",
+        "Release and choose support, rest or teacher guidance.",
+        "Shift more weight onto the wrists to adapt faster.",
+        "Ignore it if the trunk remains steady.",
+        "Discomfort is a stop signal, not a concentration challenge."
+      ],
+      [
+        "Neutral return from memory",
+        "Describe an entry, a comfortable neutral reference and an exit for Tabletop. Distinguish a repeatable reference from a rigid fixed shape.",
+        "What makes a neutral reference useful?",
+        "It can be found comfortably without excessive bracing.",
+        "It exactly matches the atlas pixels.",
+        "It prevents any spinal movement afterward.",
+        "A reference is useful for comparison and comfort, not for rigid imitation."
+      ],
+      [
+        "Cat: locate the movement",
+        "Read the Cat cues and describe where the intended gentle rounding occurs. Identify a way that forcing the neck could imitate movement without answering the spinal-control task.",
+        "Which response to a small comfortable rounding is appropriate?",
+        "Accept the available range and keep the neck unforced.",
+        "Pull the chin down to make the curve larger.",
+        "Repeat until the shape matches the picture exactly.",
+        "The supplied cue asks for gentle rounding without forcing the neck."
+      ],
+      [
+        "Separate sequence from speed",
+        "Explain the order of a gentle Cat exploration and return to neutral. During an optional window, prioritise a deliberate start and release over repetitions.",
+        "How is movement quality assessed in this mission?",
+        "By a deliberate comfortable sequence and clear observations.",
+        "By the number of cycles completed before the timer ends.",
+        "By how quickly the spine reaches the illustration.",
+        "This mission tests sequence and control; the trial cap is not a repetition target."
+      ],
+      [
+        "Identify a compensating cue",
+        "Compare the intended Cat cue with an exaggerated instruction such as pulling the head down. Explain which information would help a teacher distinguish the two.",
+        "Which note gives the teacher useful evidence?",
+        "Where movement was noticed and what felt strained.",
+        "Only the number of completed checkpoints.",
+        "A claim that the picture and body look identical.",
+        "A concrete observation is more informative than a completion count or an assumed visual match."
+      ],
+      [
+        "Cow: keep the neck question open",
+        "Analyse the Cow illustration against its long-neck review note. Explain how lifting the chin can change the picture without proving appropriate spinal movement.",
+        "The picture lifts the chin. What does the review note ask you to consider?",
+        "A long comfortable neck rather than copying the chin lift.",
+        "A stronger backward neck tilt.",
+        "A breath hold to maintain the head position.",
+        "The specific art review flags the chin position for instructor review."
+      ],
+      [
+        "Compare Cat and Cow priorities",
+        "Contrast the two written alignment cues and locate the shared neutral return. Avoid using the size of either curve as a performance score.",
+        "Which comparison is technically useful?",
+        "How each movement returns to a comfortable neutral reference.",
+        "Which produces the largest visible curve.",
+        "Which can be held longest without resting.",
+        "A controlled reference and return provide useful learning evidence without encouraging extra range."
+      ],
+      [
+        "Design a regression decision",
+        "Write a decision tree for a Cat/Cow lesson: comfortable, uncertain, and uncomfortable. Assign a smaller task, observation or rest to the appropriate branch.",
+        "Uncertainty about where movement occurs should lead to what?",
+        "Simplification or observation and a teacher question.",
+        "More force to make the movement obvious.",
+        "Automatic advancement after the hour ends.",
+        "Uncertainty is a learning question, not a reason to intensify or advance automatically."
+      ],
+      [
+        "Spinal-control case study",
+        "Prepare a written explanation of Tabletop, Cat and Cow for a teacher. Include image limitations, support choices, movement distinctions and release options.",
+        "What would demonstrate stronger understanding of this grade?",
+        "Explaining movement differences and the limits of the images.",
+        "Claiming to diagnose spinal alignment from the atlas.",
+        "Performing the deepest possible backbend.",
+        "The capstone is an evidence-based explanation; it is not an anatomical assessment."
+      ]
+    ],
+    "g03": [
+      [
+        "Hinge or collapse?",
+        "Analyse the chair-supported half-fold. Distinguish the intended supported hip hinge from reaching lower merely to deepen the outline.",
+        "Which goal best matches a supported half-fold analysis?",
+        "Understand the hinge and support relationship.",
+        "Reach a lower target at any cost.",
+        "Remove the chair before learning the setup.",
+        "The support is part of the task and can clarify where movement is organised."
+      ],
+      [
+        "Support placement reasoning",
+        "Explain how you would check that the chair is stable before a brief attempt. Describe a support-related uncertainty you would bring to a teacher.",
+        "Which condition should be addressed before using a chair?",
+        "The support is stable and the space is clear.",
+        "The chair looks like the illustration.",
+        "The next scheduled checkpoint has arrived.",
+        "Appearance and clock time cannot establish a stable support."
+      ],
+      [
+        "Half-fold teach-back",
+        "Describe setup, a comfortable range choice and an exit for the supported half-fold without looking. Compare your explanation with the supplied cues.",
+        "A technically strong teach-back includes what?",
+        "Entry, support, a learning priority and an exit.",
+        "Only the final outline.",
+        "A fixed depth that everyone must achieve.",
+        "A movement explanation needs context and an exit, not just a shape."
+      ],
+      [
+        "Heel raise: map the load",
+        "For a supported heel raise, explain the role of dependable support and describe what you would observe during rising and lowering without adding repetition targets.",
+        "What is the role of support in this heel-raise mission?",
+        "It supports a controlled comparison of rising and lowering.",
+        "It must be removed to make the lesson count.",
+        "It guarantees balance readiness.",
+        "Support permits analysis; it is not a readiness guarantee or a grading penalty."
+      ],
+      [
+        "The lowering phase",
+        "Use the written heel-raise cues to explain a deliberate lowering and a rest option. Compare controlling the return with simply reaching the top position.",
+        "Which phase belongs in a complete heel-raise analysis?",
+        "Both the rise and a controlled comfortable return.",
+        "Only the highest point.",
+        "Only the number of repetitions.",
+        "A complete task includes the return and the option to rest."
+      ],
+      [
+        "Change one demand",
+        "Design an off-mat comparison that changes one attentional demand while retaining support. State why adding height, speed and repetitions together would obscure the result.",
+        "Why should several demands not be increased at once?",
+        "It becomes difficult to identify what caused a change.",
+        "It makes the exercise automatically unsafe in all cases.",
+        "It prevents the app from counting checkpoints.",
+        "The reasoning task is to isolate the effect of a change, not to infer readiness from a count."
+      ],
+      [
+        "Tree preparation: plan the exit",
+        "Analyse wall-tree preparation. Describe the support, foot-placement limits in the supplied cue and a simple route back to a stable stance.",
+        "When should the balance exit be decided?",
+        "Before a brief attempt begins.",
+        "Only after balance is lost.",
+        "After the clock moves to the next checkpoint.",
+        "Preparing a route out is part of the setup rather than a response to the schedule."
+      ],
+      [
+        "Balance evidence",
+        "Compare a comfortable supported side with the other side without forcing equal performance. Record the difference and a support decision.",
+        "What is the best interpretation of a side difference?",
+        "A reason to adapt and discuss, not force symmetry.",
+        "Proof of a diagnosis.",
+        "A reason to repeat the weaker side until it matches.",
+        "A difference is an observation; it does not diagnose a cause or justify forcing the other side."
+      ],
+      [
+        "A support-preserving challenge",
+        "Increase the technical demand by tracking breath, contact and exit readiness together. Retain support and simplify if attention disrupts comfort.",
+        "How can this mission become more demanding without removing support?",
+        "Coordinate several observations while preserving comfort.",
+        "Close the eyes and remove support.",
+        "Stand until fatigue forces an exit.",
+        "Attention and decision complexity can increase while support and short windows remain."
+      ],
+      [
+        "Standing strategy capstone",
+        "Write a supported-standing lesson linking a hinge, a heel raise and tree preparation. Give each a distinct purpose, support check and fallback.",
+        "Which capstone plan is most defensible?",
+        "A plan with distinct goals, supports and exits.",
+        "A plan that removes every support by the end.",
+        "A plan that equates a finished hour with balance mastery.",
+        "Planning quality is demonstrated by clear reasoning, not by mandatory removal of support."
+      ]
+    ],
+    "g04": [
+      [
+        "Warrior II priorities",
+        "Identify the leg and arm alignment priorities in Warrior II. Explain which cue you would simplify first if attending to both creates excessive effort.",
+        "When two cues compete with comfort, what should lead?",
+        "Reduce task complexity and use a comfortable range.",
+        "Deepen the stance to make both cues more obvious.",
+        "Hold the breath while arranging the arms.",
+        "Managing competing priorities includes knowing when to simplify."
+      ],
+      [
+        "Stance comparison",
+        "Describe a one-variable comparison between comfortable stance choices. Evaluate control and breathing rather than depth or resemblance to the artwork.",
+        "What should a stance comparison evaluate?",
+        "Comfort, control and breathing within the available range.",
+        "The widest distance between the feet.",
+        "How much muscular shaking appears.",
+        "More demanding reasoning does not require a wider or more fatiguing stance."
+      ],
+      [
+        "Explain both sides",
+        "Prepare bilateral cue notes for Warrior II. State what transfers between sides and what may need individual adaptation without mirroring the illustration.",
+        "What should remain flexible across sides?",
+        "The support and range chosen for comfort.",
+        "The requirement to match both sides exactly.",
+        "The instruction to keep going through pain.",
+        "The illustration is fixed; bilateral learning requires side-specific judgement."
+      ],
+      [
+        "Side angle support strategy",
+        "Analyse the supported side-angle setup. Explain how support can clarify trunk and leg organisation instead of being treated as a shortcut.",
+        "What does a block or other supplied support change?",
+        "The conditions of the learning task, not its legitimacy.",
+        "The need to breathe normally.",
+        "The stop rule for discomfort.",
+        "Support can change the task while normal breathing and stop rules still apply."
+      ],
+      [
+        "Trunk versus reach",
+        "Separate a comfortable trunk organisation from the desire to reach farther in side angle. Describe how you would notice a reach that disrupts control.",
+        "A farther reach disrupts your breathing. Which observation matters most?",
+        "The reach has exceeded the useful task for now.",
+        "The larger outline proves improved technique.",
+        "The timer requires the reach to be maintained.",
+        "Breathing and comfort take priority over an expanded outline."
+      ],
+      [
+        "Prioritisation case",
+        "Explain how you would choose between adjusting stance, using more support and observing a side-angle lesson. Defend the choice using a concrete observation.",
+        "Which choice is appropriate when the setup remains uncertain?",
+        "Observe and ask a teacher rather than adding demand.",
+        "Remove the support to make the decision simpler.",
+        "Assume attendance verifies the alignment.",
+        "Uncertainty remains a valid reason for observation or teacher input."
+      ],
+      [
+        "Triangle: distinguish reach from hinge",
+        "Study triangle with a block. Explain the role of the block and the difference between a comfortable hinge and chasing a lower hand position.",
+        "What should determine the block-supported hand position?",
+        "A comfortable setup that serves the learning goal.",
+        "The lowest available block height.",
+        "The hand position of the generated character.",
+        "A draft image is not an individual range prescription."
+      ],
+      [
+        "Three-plane observation",
+        "List observations about stance, trunk orientation and arm effort in triangle. Identify which observations you can report and which require teacher assessment.",
+        "Which claim exceeds what this app can establish?",
+        "The image proves my three-dimensional alignment is correct.",
+        "I noticed effort in my shoulders.",
+        "I used a higher support comfortably.",
+        "Static artwork cannot establish your individual three-dimensional alignment."
+      ],
+      [
+        "Contrast three standing patterns",
+        "Compare Warrior II, side angle and triangle. Identify one shared priority and one cue that must change rather than applying a single instruction to all three.",
+        "What is the value of contrasting these standing positions?",
+        "It reveals where cues transfer and where they differ.",
+        "It produces a single universal joint-angle target.",
+        "It removes the need for individual modifications.",
+        "Technical understanding includes the boundaries of a cue, not only its repetition."
+      ],
+      [
+        "Standing precision defence",
+        "Defend a written standing sequence, including a side-specific modification, a support choice, a transition plan and a reason to stop.",
+        "Which outcome belongs to this capstone?",
+        "A defensible sequence and clear limits, pending teacher review.",
+        "An automatic advanced-readiness certificate.",
+        "A requirement for deeper ranges in every pose.",
+        "This is a planning assessment; it cannot certify a body’s readiness."
+      ]
+    ],
+    "g05": [
+      [
+        "Bird dog: trunk or limb?",
+        "Analyse bird dog by separating limb reach from trunk substitution. Explain how a smaller reach can make the technical task more precise.",
+        "A longer reach turns into trunk rotation. Which experiment is more informative?",
+        "Shorten the reach and observe trunk organisation.",
+        "Reach farther to compensate.",
+        "Extend the trial until rotation disappears.",
+        "A smaller lever can clarify the intended control task."
+      ],
+      [
+        "Contralateral attention",
+        "Describe the relationship between opposite limbs in the supplied bird-dog setup. Track a stable support contact and an unforced breath during a brief optional attempt.",
+        "What makes a contralateral task technically demanding?",
+        "Coordinating limb action with trunk and support awareness.",
+        "Performing it as fast as possible.",
+        "Maximising limb height.",
+        "Coordination and observation, rather than speed or height, define this task."
+      ],
+      [
+        "Regression reasoning",
+        "Write a regression for bird dog using a smaller task or observation. Explain what evidence would make you retain the simpler version.",
+        "When should a regression remain useful?",
+        "When it allows a clearer comfortable learning task.",
+        "Only until a fixed number of checkpoints is finished.",
+        "Only when a user is a beginner.",
+        "Experienced practitioners can use regressions to answer precise technical questions."
+      ],
+      [
+        "Knees-down plank audit",
+        "Read the plank illustration’s lumbar-extension review note. Explain how rib and pelvis organisation differs from holding the pictured outline.",
+        "Why does the plank review note matter?",
+        "The generated outline needs alignment review rather than literal imitation.",
+        "It authorises an unsupported full plank.",
+        "It means a longer hold is required.",
+        "The supplied illustration has a specific limitation; it does not prescribe a progression."
+      ],
+      [
+        "Load and breath",
+        "Compare contact, trunk effort and breathing in the supplied knees-down preparation. Plan a release before attempting; rest if effort overwhelms normal breathing.",
+        "Breathing becomes strained in the preparation. Which response is appropriate?",
+        "Release and reduce demand or observe.",
+        "Continue until the trial timer expires.",
+        "Hold the breath to stabilise the trunk.",
+        "The optional window is a maximum opportunity, not a requirement to maintain effort."
+      ],
+      [
+        "Leverage case study",
+        "Explain to a teacher how changing a lever can change a trunk-control task. Use the supplied knees-down version as your reference rather than unlocking a harder pose.",
+        "What does understanding leverage establish?",
+        "A basis for discussion, not automatic permission for a harder variation.",
+        "Proof that the full variation is safe for everyone.",
+        "A reason to double the trial duration.",
+        "A reasoning answer is not a physical readiness assessment."
+      ],
+      [
+        "Boat preparation: choose the task",
+        "Analyse bent-knee boat preparation. Distinguish a useful support-and-trunk task from pursuing a dramatic leg or torso position.",
+        "Which target is appropriate for this boat-preparation mission?",
+        "A comfortable controlled preparation with a planned release.",
+        "The most extended leg shape available.",
+        "The longest hold you can tolerate.",
+        "The supplied preparation is the reference; extending the shape is not compulsory."
+      ],
+      [
+        "Controlled entry and exit",
+        "Explain how you would enter and leave boat preparation without using momentum as a substitute for control. Record an observable sign that the task needs simplification.",
+        "Which sign supports simplifying a task?",
+        "Rushing or momentum replaces a deliberate entry.",
+        "The pose looks less dramatic than the illustration.",
+        "Another grade has been browsed.",
+        "A loss of deliberateness is relevant evidence; appearance and browsing are not."
+      ],
+      [
+        "Three trunk-control comparisons",
+        "Compare bird dog, knees-down plank and boat preparation by support pattern and limb leverage. Explain why identical effort cues may not fit all three.",
+        "Why compare support patterns?",
+        "They change the coordination and leverage questions.",
+        "They give a universal exertion score.",
+        "They allow the app to verify muscle activation.",
+        "The app cannot measure muscle activation or derive a universal physical difficulty score."
+      ],
+      [
+        "Coordination capstone",
+        "Defend a written trunk-control lesson with one regression per preparation, normal-breathing priorities and deliberate exits. Identify what a teacher still needs to assess.",
+        "What remains outside the app’s assessment?",
+        "Individual physical readiness and alignment verification.",
+        "Whether a written answer was selected correctly.",
+        "Whether a note was saved.",
+        "Knowledge checks and saved notes do not establish individual physical readiness."
+      ]
+    ],
+    "g06": [
+      [
+        "Sphinx support analysis",
+        "Analyse Sphinx using the supplied small-range cues. Distinguish a comfortable supported position from chasing greater spinal extension.",
+        "Which target serves this Sphinx mission?",
+        "A supported comfortable range with unforced breathing.",
+        "The largest visible arch.",
+        "A fixed amount of spinal extension for everyone.",
+        "The task is discrimination and support, not maximum range."
+      ],
+      [
+        "Distribution versus compression",
+        "Describe the difference between a distributed movement intention and a focal sensation of compression. Treat uncertainty as a teacher question rather than a reason to push.",
+        "A focal uncomfortable sensation appears. What should happen?",
+        "Release and rest; discuss it with a qualified teacher.",
+        "Increase the arch to spread the movement.",
+        "Wait for the next checkpoint before changing position.",
+        "Uncomfortable sensations call for stopping, not for attempting to solve them with more range."
+      ],
+      [
+        "Support trade-off defence",
+        "Explain the support role in Sphinx and a reason to choose observation. State what you can notice yourself and what the static image cannot verify.",
+        "Which statement respects the image’s limits?",
+        "I can report comfort; the image cannot assess my body.",
+        "Matching the picture proves safe extension.",
+        "The generated artwork is clinically validated.",
+        "The artwork is an unreviewed illustration, not an individual assessment."
+      ],
+      [
+        "Low cobra: effort direction",
+        "Read the low-cobra cues and describe a small deliberate exploration. Distinguish the intention to organise the trunk from pushing into a larger outline.",
+        "Which change would miss the purpose of this mission?",
+        "Using more force simply to create a higher outline.",
+        "Choosing a smaller comfortable exploration.",
+        "Writing down a question for a teacher.",
+        "The mission asks for technical discrimination, not a higher shape."
+      ],
+      [
+        "Breathing as feedback",
+        "Explain how normal breathing informs a small low-cobra learning task. If attention to the cue changes breathing or comfort, simplify or observe.",
+        "How should strained breathing be used?",
+        "As a reason to release or reduce task demand.",
+        "As proof that a useful challenge has begun.",
+        "As a cue to hold the breath deliberately.",
+        "The curriculum retains normal unforced breathing and the ability to stop."
+      ],
+      [
+        "Sphinx–cobra comparison",
+        "Contrast the support arrangements and learning priorities of Sphinx and low cobra. Explain why one illustration cannot define the other setup.",
+        "A useful comparison should focus on what?",
+        "Different support arrangements and written priorities.",
+        "Which backbend reaches the greatest height.",
+        "Which permits the longest continuous hold.",
+        "Comparing support and priorities tests understanding without encouraging extra range."
+      ],
+      [
+        "Low bridge: setup logic",
+        "Analyse low bridge using its supplied setup and release cues. Write how you would check a comfortable base before any brief exploration.",
+        "Which belongs before an optional low-bridge attempt?",
+        "A comfortable setup and a clear release plan.",
+        "A target for maximum height.",
+        "A requirement to complete the entire timer.",
+        "Setup and release precede an optional attempt; height and duration are not the goal."
+      ],
+      [
+        "Exit control",
+        "Describe a deliberate release from low bridge, including what would lead you to stop earlier. Separate a controlled exit from the size of the lift.",
+        "What is evidence of a more considered exit?",
+        "An intentional comfortable release that can happen early.",
+        "Maintaining the lift until the bell regardless of comfort.",
+        "A visibly larger arch before releasing.",
+        "The ability to leave deliberately is a distinct learning objective."
+      ],
+      [
+        "Three extension strategies",
+        "Compare Sphinx, low cobra and low bridge by contacts, support and release. Write one uncertainty for each without prescribing a progression into deep backbends.",
+        "What follows from completing these comparisons?",
+        "A stronger discussion basis, not permission for deep backbends.",
+        "Automatic readiness for a full backbend.",
+        "A requirement to intensify the next day.",
+        "Completion does not unlock deep backbends or establish readiness."
+      ],
+      [
+        "Extension case defence",
+        "Build a written case in which a smaller range is the better technical choice. Defend supports, normal breathing, rest and the need for qualified feedback.",
+        "Which justification is technically strongest?",
+        "The smaller range permits a clearer comfortable objective.",
+        "It allows more checkpoints to be completed rapidly.",
+        "It guarantees clinical benefit.",
+        "A clear objective and honest limits make a stronger argument than counts or treatment claims."
+      ]
+    ],
+    "g07": [
+      [
+        "Butterfly: support and rotation",
+        "Analyse supported butterfly. Explain how support and comfortable hip position matter more than lowering the knees to match the image.",
+        "Which goal would undermine this mission?",
+        "Forcing the knees downward to match the illustration.",
+        "Using support to stay comfortable.",
+        "Reporting a difference between sides.",
+        "The generated shape is not an individual range target."
+      ],
+      [
+        "Separate motion sources",
+        "Distinguish intended hip movement from compensating movement elsewhere in a butterfly setup. Name a question that requires teacher observation.",
+        "What can your written report establish?",
+        "Your observations and uncertainties, not a diagnosis.",
+        "A precise anatomical explanation for every sensation.",
+        "A universal correction for other learners.",
+        "A self-report is evidence for discussion, not a diagnosis or universal prescription."
+      ],
+      [
+        "Adaptation defence",
+        "Explain why a supported or smaller butterfly position may be technically appropriate for an experienced practitioner. Specify the learning question it serves.",
+        "When is a support-based adaptation legitimate?",
+        "Whenever it serves a clear comfortable objective.",
+        "Only before someone has tried the original shape.",
+        "Only if both knees reach the same height.",
+        "Experience does not remove the value of support or require symmetry."
+      ],
+      [
+        "Figure four: pelvic substitution",
+        "Study reclined figure four and distinguish hip positioning from changing the trunk or pelvis just to deepen the outline. Use the supplied comfort limits.",
+        "What should lead a figure-four comparison?",
+        "Comfort and clarity about the intended task.",
+        "The deepest possible shape.",
+        "The closest visual match to the character.",
+        "The goal is useful discrimination within individual limits."
+      ],
+      [
+        "Bilateral evidence",
+        "Record separate observations for each side of figure four. Explain why using different comfortable supports may be more defensible than forcing equal ranges.",
+        "What does a side difference require?",
+        "A documented adaptation or teacher question.",
+        "An automatic diagnosis.",
+        "Equal practice through discomfort.",
+        "Side differences invite adaptation and discussion rather than forced matching."
+      ],
+      [
+        "Support decision case",
+        "Create a figure-four case where the user chooses observation. State the uncertain variable and a precise question for the teacher.",
+        "Which teacher question is most useful?",
+        "How can this setup be adapted to the discomfort I noticed?",
+        "Can I ignore discomfort to match the other side?",
+        "Does completing the timer verify my hip alignment?",
+        "A specific observation and adaptation question support a useful discussion."
+      ],
+      [
+        "Low lunge: organise the base",
+        "Analyse padded low lunge. Explain the role of knee padding and a comfortable stance before discussing reach or depth.",
+        "Which condition should be addressed first?",
+        "A comfortable supported base.",
+        "Maximum forward reach.",
+        "Removing padding to increase difficulty.",
+        "The support and comfort conditions remain part of an experienced technical task."
+      ],
+      [
+        "Hip motion versus extra depth",
+        "Compare a comfortable low-lunge objective with an instruction to sink farther. Explain which observations might show that extra depth is obscuring the task.",
+        "What would justify reducing range?",
+        "The extra depth disrupts comfort or organisation.",
+        "The supported version looks simpler.",
+        "The next grade is available.",
+        "A useful range serves the objective and comfort; it is not selected by appearance."
+      ],
+      [
+        "Three hip contexts",
+        "Contrast butterfly, figure four and low lunge by support, side differences and release. Identify why the same range cue cannot be imposed on all three.",
+        "Why should range cues remain specific to the position?",
+        "The positions and support conditions differ.",
+        "The app can measure exact hip rotation.",
+        "Every learner should eventually reach identical angles.",
+        "Different conditions call for specific reasoning; the app does not measure anatomy."
+      ],
+      [
+        "Adaptation dossier",
+        "Prepare a written case with separate side observations, support options and a stop/rest decision for each pose. Include what still needs qualified review.",
+        "What is the best evidence of learning here?",
+        "A clear adaptation rationale and honest uncertainty.",
+        "Identical bilateral range.",
+        "A claim that the generated artwork validates your joints.",
+        "The dossier assesses reasoning and observation rather than physical symmetry."
+      ]
+    ],
+    "g08": [
+      [
+        "Chair: competing demands",
+        "Analyse shallow chair with the supplied comfortable range. Coordinate stance, trunk effort and breathing without treating depth as the challenge score.",
+        "How should chair difficulty be approached in this mission?",
+        "Through coordinated priorities in a comfortable shallow task.",
+        "By increasing depth until fatigue appears.",
+        "By holding until the timer finishes.",
+        "The technical demand is coordination, not compulsory depth or fatigue."
+      ],
+      [
+        "Transition intention",
+        "Explain a deliberate entry to and exit from shallow chair. Identify where rushing could conceal uncertainty and how you would simplify.",
+        "What makes a transition more technically useful?",
+        "A clear controlled entry and exit with a fallback.",
+        "Speed between shapes.",
+        "Eliminating every pause.",
+        "A transition is a learning task, not a race."
+      ],
+      [
+        "Two-condition comparison",
+        "Plan an off-mat comparison of a familiar chair setup and one small comfortable adjustment. State the single question and what evidence would answer it.",
+        "What belongs in a comparison plan?",
+        "One question, one change and a way to describe the result.",
+        "Several changes and a maximum-effort target.",
+        "A promise of a specific physical improvement.",
+        "An interpretable comparison is specific and does not promise an outcome."
+      ],
+      [
+        "Supported Warrior III strategy",
+        "Study supported Warrior III. Explain support contact, trunk intention and the exit before considering any optional attempt.",
+        "Which instruction fits the supported reference?",
+        "Keep dependable support and pre-plan the exit.",
+        "Remove support to make the attempt count.",
+        "Stay until balance fails.",
+        "The support is integral to the supplied preparation."
+      ],
+      [
+        "Control without lever escalation",
+        "Increase the attentional challenge by tracking contact, breathing and trunk organisation together. Keep the supplied supported form and simplify if control is lost.",
+        "What is a suitable technical escalation?",
+        "Coordinate more observations without forcing a harder shape.",
+        "Maximise lever length regardless of control.",
+        "Add a blindfold or unstable support.",
+        "The challenge is integration of observations while retaining a dependable setup."
+      ],
+      [
+        "Balance contingency case",
+        "Write a decision plan for uncertainty during supported Warrior III. Include release, rest and a question that a teacher could answer by observation.",
+        "If balance becomes uncertain, what should lead?",
+        "Use the planned release and regain a comfortable base.",
+        "Stay in place to prove commitment.",
+        "Wait for the notification before changing position.",
+        "The exit plan and comfort take priority over a clock or achievement goal."
+      ],
+      [
+        "Dancer preparation: support logic",
+        "Analyse supported dancer preparation as supplied. Explain why it remains a preparation and why additional reach is not established by completing earlier grades.",
+        "What does finishing Grade 7 establish for dancer preparation?",
+        "Learning history, not permission for a deeper variation.",
+        "Verified readiness for an unsupported balance.",
+        "A requirement to increase the backbend.",
+        "A prior grade count does not assess individual physical readiness."
+      ],
+      [
+        "Multi-priority rehearsal",
+        "Mentally rehearse support, comfortable range, normal breathing and exit for dancer preparation. Identify the priority that becomes unclear first.",
+        "What should happen when one priority becomes unclear?",
+        "Simplify the task or observe and ask a teacher.",
+        "Increase effort to make the shape more stable.",
+        "Ignore that priority until the timer ends.",
+        "Recognising the limit of attention is part of technical judgement."
+      ],
+      [
+        "Compare recovery strategies",
+        "Compare the route out of chair, supported Warrior III and dancer preparation. Explain which recovery choices can transfer and which depend on the pose.",
+        "Why compare exits across balances?",
+        "It develops contingency reasoning specific to each setup.",
+        "It makes falls a required learning outcome.",
+        "It proves that all balances share one exit.",
+        "Exit reasoning is specific; falling is not a required exercise."
+      ],
+      [
+        "Integration capstone",
+        "Design a written supported-balance lesson with paired priorities, one-variable comparisons, recoveries and a readiness question for a teacher.",
+        "What is the strongest capstone conclusion?",
+        "I can explain a plan and identify what still needs review.",
+        "The app verified my balance technique.",
+        "I must remove supports next time.",
+        "A technical plan remains distinct from instructor verification or compulsory progression."
+      ]
+    ],
+    "g09": [
+      [
+        "Dolphin readiness observation",
+        "Observe the dolphin preparation illustration with a qualified teacher. Identify shoulder and support questions without initiating an unsupervised attempt.",
+        "What is authorised by this checkpoint?",
+        "Observation and teacher discussion of preparation.",
+        "An unsupervised inversion attempt.",
+        "A physical timer extended for experienced users.",
+        "Grade 9 retains zero unsupervised trial time, regardless of experience."
+      ],
+      [
+        "Load prerequisites discussion",
+        "Ask your teacher how shoulder and wrist loading prerequisites would be assessed for your own context. Record the question and the limits of an app illustration.",
+        "Who can determine an individual advanced loading progression?",
+        "A qualified teacher with appropriate individual assessment.",
+        "The app after ten completed hours.",
+        "The atlas character’s final position.",
+        "Completion and images cannot establish individual advanced readiness."
+      ],
+      [
+        "Evidence versus assumption",
+        "Compare a teacher’s observation with your own inference about dolphin preparation. Label what was observed, what was reported and what remains unknown.",
+        "Which record is most honest?",
+        "Teacher attendance was self-reported; readiness remains unverified here.",
+        "Attendance automatically proves readiness.",
+        "A quiz score verifies shoulder capacity.",
+        "The app records a report, not instructor verification or physical capacity."
+      ],
+      [
+        "Grounded crow is preparation",
+        "Observe the grounded squat used for crow preparation. Identify the visible contacts and explain why it is not an airborne arm balance.",
+        "What does this crow-preparation image actually depict?",
+        "A grounded squat with palms down.",
+        "A verified airborne crow balance.",
+        "A transition into a headstand.",
+        "The art review explicitly describes the image as grounded preparation."
+      ],
+      [
+        "Preparation–skill boundary",
+        "With your teacher, list questions separating a grounded setup from a full arm-balance skill. Keep the discussion separate from attempts.",
+        "What does a correct explanation of the grounded setup unlock?",
+        "Further discussion; no automatic advanced physical skill.",
+        "An unsupervised airborne attempt.",
+        "A longer timer for testing wrist endurance.",
+        "A correct answer does not unlock a physical progression."
+      ],
+      [
+        "Arm-balance case analysis",
+        "Discuss a case in which a learner has completed every checkpoint but has unresolved loading questions. Defend a decision to continue preparation.",
+        "What should unresolved loading questions lead to?",
+        "Continued preparation and qualified assessment.",
+        "Advancement because the checklist is complete.",
+        "Testing the full pose alone to find out.",
+        "Participation history cannot resolve individual loading uncertainties."
+      ],
+      [
+        "Kneeling setup: read the image",
+        "Observe that the kneeling image shows sitting on the heels. Discuss how that differs from a tall-kneeling or backbend progression.",
+        "What limitation must be recorded about this image?",
+        "It shows a seated kneeling setup, not a reviewed deep backbend.",
+        "It verifies a tall-kneeling backbend.",
+        "It establishes that every knee tolerates kneeling.",
+        "The supplied art review flags this exact setup-versus-progression distinction."
+      ],
+      [
+        "Adaptation questions for kneeling",
+        "Ask a teacher about padding, individual comfort and alternatives to kneeling. Record questions without making a diagnosis or prescribing deeper range.",
+        "What is a suitable discussion outcome?",
+        "An individual adaptation question and next review step.",
+        "A universal instruction to force kneeling range.",
+        "A diagnosis from the illustration.",
+        "The purpose is an individual discussion, not a universal anatomical prescription."
+      ],
+      [
+        "Teacher feedback synthesis",
+        "Organise feedback into observations, decisions and unresolved questions across dolphin, grounded crow and kneeling setup.",
+        "Which statement distinguishes feedback from verification?",
+        "I recorded the teacher discussion; this app cannot authenticate it.",
+        "My attendance checkbox certifies the teacher’s assessment.",
+        "A stored note proves clinical validation.",
+        "The app has no authenticated instructor-verification workflow."
+      ],
+      [
+        "Advanced readiness dossier",
+        "Prepare a teacher-facing dossier covering prerequisites, adaptations, image limits and reasons to defer a full skill. No physical demonstration is requested here.",
+        "What should this dossier conclude when readiness is uncertain?",
+        "Defer the full skill and identify an assessment step.",
+        "Use a maximal trial to settle the question.",
+        "Treat the programme grade as clearance.",
+        "Uncertainty calls for qualified assessment, not an app-driven advanced attempt."
+      ]
+    ],
+    "g10": [
+      [
+        "Wall press: analyse intention",
+        "With a qualified teacher, analyse the wall-shoulder-press preparation. Distinguish its learning purpose from an unsupported inversion progression.",
+        "What is this mission asking for?",
+        "Analysis of preparation with a qualified teacher.",
+        "An unsupported inversion test.",
+        "A longer unsupervised physical trial.",
+        "Grade 10 remains teacher-guided observation and discussion."
+      ],
+      [
+        "Individual constraint case",
+        "Discuss a hypothetical learner whose comfort or support needs change the wall-press setup. Explain what information the teacher needs before choosing an adaptation.",
+        "Which information best supports an individual adaptation discussion?",
+        "Specific comfort observations, support needs and uncertainties.",
+        "Only the number of grades completed.",
+        "The most demanding variation another learner can do.",
+        "A case needs individual context rather than comparisons or participation counts."
+      ],
+      [
+        "Coaching language audit",
+        "Rewrite a forceful wall-press instruction into an observation-based question for a teacher. Explain why the revised wording avoids assuming readiness.",
+        "Which coaching statement is more defensible?",
+        "What support or range serves this learner’s objective?",
+        "Everyone should use the same range.",
+        "Completion means this progression is safe.",
+        "An individual question makes the decision explicit without claiming universal readiness."
+      ],
+      [
+        "Half-split preparation analysis",
+        "Study the half-split preparation with a teacher. Explain support and comfortable range, distinguishing the supplied preparation from a full split.",
+        "What does the half-split illustration establish?",
+        "A preparation example, not clearance for a full split.",
+        "A target range everyone must reach.",
+        "A verified measure of hamstring length.",
+        "The image is illustrative and does not measure anatomy or authorise a full split."
+      ],
+      [
+        "Respond to a changed case",
+        "Discuss how a half-split lesson would change if the learner reports discomfort. Give a stop/rest decision and a question for individual review.",
+        "What should a discomfort report change?",
+        "Stop the task and review an individual alternative.",
+        "The time available for stretching through it.",
+        "The requirement to reach the planned outline.",
+        "The stop rule remains in effect in experienced and teacher-guided lessons."
+      ],
+      [
+        "Compare adaptation choices",
+        "Defend two possible teacher-discussion adaptations for a half-split preparation. Explain which additional observations would inform the choice.",
+        "What makes an adaptation defence stronger?",
+        "Clear observations and honest limits to the available information.",
+        "A claim that one adaptation works for everyone.",
+        "A promise that the app can verify the tissue response.",
+        "A defensible case uses information and acknowledges what is unknown."
+      ],
+      [
+        "Kneeling side plank: support analysis",
+        "Observe the kneeling side-plank preparation with your teacher. Map its support pattern and discuss questions about trunk and shoulder organisation.",
+        "What does mapping support contribute?",
+        "A structured question for qualified review.",
+        "Automatic permission for an unsupported full version.",
+        "A measurement of muscle strength by the app.",
+        "A support map supports discussion; it does not assess strength or readiness."
+      ],
+      [
+        "Sequencing under constraints",
+        "Design a paper sequence using the supplied Grade 10 preparations. Give each a purpose, a rest or alternative, and a reason to omit it for a particular learner.",
+        "Which sequence shows stronger judgement?",
+        "One that can omit or adapt a preparation for individual needs.",
+        "One that includes every pose regardless of the case.",
+        "One that ends with an unreviewed advanced skill.",
+        "A sequence should respond to the learner rather than satisfy a compulsory list."
+      ],
+      [
+        "Review the decision trail",
+        "Review a case with your teacher: observations, proposed choices, alternatives and unresolved questions. Separate the app’s records from any teacher assessment.",
+        "What can the app truthfully record?",
+        "Your written decision trail and self-reported attendance.",
+        "An authenticated instructor clearance.",
+        "A clinical assessment of alignment.",
+        "This prototype records learning participation, not verified professional assessment."
+      ],
+      [
+        "Experienced-practitioner capstone",
+        "Present a written learning plan across all ten grades: technical priorities, supports, fallbacks, evidence, rest and questions for qualified review. Identify why some skills may remain deferred.",
+        "What is the strongest final programme outcome?",
+        "A reasoned individual learning plan with clearly stated limits.",
+        "A mastery certificate for advanced yoga.",
+        "Permission to practise every advanced skill alone.",
+        "The capstone evaluates understanding and planning; it does not grant physical clearance or mastery."
+      ]
+    ]
+  }
+}

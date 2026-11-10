@@ -21,6 +21,9 @@ import { Badge, ComfortCheck, PoseSprite, outcomeLabel } from "./components";
 import { recordsFor } from "./core/progress";
 import type { Attempt, CompletionRecord, Outcome } from "./core/progress";
 import { timerLabel } from "./core/timer";
+import { MissionPanel } from './ChallengeUI';
+import { missionByHour, profileByGrade } from './curriculum/challenges';
+import type { MissionEvidence } from './core/progress';
 
 interface Props {
   attempt: Attempt;
@@ -35,6 +38,7 @@ interface Props {
   ): void;
   onNext(): void;
   onRest(reason: string, note: string): void;
+  onMission(id: string, evidence: MissionEvidence, submit?: boolean): void;
 }
 export function SessionPlayer({
   attempt,
@@ -44,6 +48,7 @@ export function SessionPlayer({
   onRecord,
   onNext,
   onRest,
+  onMission,
 }: Props) {
   const c = checkpointById[attempt.cursor];
   const pose = poseById[c.poseId];
@@ -88,7 +93,9 @@ export function SessionPlayer({
           {grade.title} <span className="dot">·</span> Checkpoint{" "}
           {c.numberWithinGrade} of 120
         </p>
+        <Badge>{profileByGrade[grade.id].stage} · experienced practitioner track</Badge>
       </div>
+      <MissionPanel key={c.hourId} mission={missionByHour[c.hourId]} evidence={attempt.missions[c.hourId]} onChange={onMission} onInspect={() => onTimer('pause')} unsaved={unsaved} expanded={c.numberWithinGrade % 12 === 11} />
       <div className="player-grid">
         <div className="player-visual">
           <div className="art-panel">
@@ -258,6 +265,7 @@ export function SessionPlayer({
                   {record.note ||
                     "You can revisit these cues anytime. Your original record is preserved."}
                 </p>
+                {record.curriculumVersion === 1 && <p className="small">Original curriculum record preserved. Technical mission assessments are recorded separately.</p>}
               </div>
             </div>
           ) : (

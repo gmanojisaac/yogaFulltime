@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import { contentDiagnostics } from "./content";
 import App from "./App";
 import "./styles.css";
+import './challenges.css';
 
 class ErrorBoundary extends Component<
   { children: ReactNode },

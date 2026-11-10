@@ -75,3 +75,26 @@ for (const a of manifest.atlases) {
 console.log(
   "Validated 10 grades, 100 hours, 1,200 checkpoints, 30 unique pose cells and 5 PNG hashes.",
 );
+const challenges = JSON.parse(await readFile(new URL('../src/curriculum/challenges.json', import.meta.url), 'utf8'));
+assert.equal(challenges.version, 2);
+assert.equal(challenges.profiles.length, 10);
+assert.equal(Object.keys(challenges.missions).length, 10);
+let missionCount = 0;
+const missionTitles = new Set();
+for (const grade of grades) {
+  const profile = challenges.profiles.find(p => p.gradeId === grade.id);
+  assert(profile, `Missing technical profile for ${grade.id}`);
+  assert.equal(profile.supervised, grade.supervisionRequired);
+  assert.equal(profile.competencies.length, 3);
+  const lessons = challenges.missions[grade.id];
+  assert.equal(lessons.length, 10);
+  for (const lesson of lessons) {
+    assert.equal(lesson.length, 7);
+    assert(lesson.every(text => typeof text === 'string' && text.trim().length >= 8));
+    assert.equal(new Set(lesson.slice(3, 6)).size, 3, `Duplicate answer in ${lesson[0]}`);
+    assert(!missionTitles.has(lesson[0]), `Duplicate technical mission: ${lesson[0]}`);
+    missionTitles.add(lesson[0]); missionCount++;
+  }
+}
+assert.equal(missionCount, 100);
+console.log('Validated 100 authored technical missions and 100 scenario assessments across ten progressively structured grades.');

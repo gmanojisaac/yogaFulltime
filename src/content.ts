@@ -4,11 +4,12 @@ import hoursData from "./Yoga10_Codex_Assets_and_Prompt/Yoga10_Codex_Kit/data/ho
 import checkpointsData from "./Yoga10_Codex_Assets_and_Prompt/Yoga10_Codex_Kit/data/checkpoints.json";
 import posesData from "./Yoga10_Codex_Assets_and_Prompt/Yoga10_Codex_Kit/data/poses.json";
 import manifestData from "./Yoga10_Codex_Assets_and_Prompt/Yoga10_Codex_Kit/data/asset-manifest.json";
+import { challengeDiagnostics, challengeInstruction, missionByHour, profileByGrade } from './curriculum/challenges';
 
 export const config = configData;
-export const grades = gradesData;
-export const hours = hoursData;
-export const checkpoints = checkpointsData;
+export const grades = gradesData.map(grade => ({ ...grade, objective: profileByGrade[grade.id]?.summary ?? grade.objective }));
+export const hours = hoursData.map(hour => ({ ...hour, title: missionByHour[hour.id]?.title ?? hour.title, learningGoal: missionByHour[hour.id]?.brief ?? hour.learningGoal }));
+export const checkpoints = checkpointsData.map(checkpoint => ({ ...checkpoint, instruction: challengeInstruction(checkpoint) }));
 export const poses = posesData;
 export const manifest = manifestData;
 export type Grade = (typeof grades)[number];
@@ -25,7 +26,7 @@ export const gradeCheckpoints = (id: string) =>
   checkpoints.filter((c) => c.gradeId === id);
 
 export function contentDiagnostics(): string[] {
-  const errors: string[] = [];
+  const errors: string[] = challengeDiagnostics();
   for (const [label, entries, count] of [
     ["grades", grades, 10],
     ["hours", hours, 100],

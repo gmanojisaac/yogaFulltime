@@ -161,12 +161,12 @@ describe("normal application entry points", () => {
   });
   it("completes setup, starts a trial, pauses, records once and restores on reload", () => {
     const view = render(<App />);
-    expect(screen.getByRole("heading", { name: /Make yourself/ })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: /Set your/ })).toBeTruthy();
     fireEvent.click(
       screen.getByRole("button", { name: "Begin my learning journey" }),
     );
     expect(
-      screen.getByRole("heading", { name: "Welcome to your own pace." }),
+      screen.getByRole("heading", { name: "Your technique lab." }),
     ).toBeTruthy();
     fireEvent.click(
       screen.getByRole("button", { name: "Begin first checkpoint" }),

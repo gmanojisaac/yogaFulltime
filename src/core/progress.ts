@@ -3,6 +3,7 @@ import { checkpointById, gradeById, gradeCheckpoints } from "../content";
 import { createSchedule, localDate, validTimeZone } from "./schedule";
 import { restoreTimer } from "./timer";
 import type { TrialTimer } from "./timer";
+import { CHALLENGE_VERSION, missionByHour, missionComplete } from '../curriculum/challenges';
 
 export const STORAGE_KEY = "yoga10.progress.v1";
 const text = z
@@ -51,6 +52,7 @@ const recordSchema = z
     note: text,
     side: z.enum(["both", "left", "right", "observe"]),
     attendance: z.boolean(),
+    curriculumVersion: z.union([z.literal(1), z.literal(2)]).default(1),
   })
   .strict();
 const scheduleSchema = z
@@ -91,6 +93,14 @@ const timerSchema = z
     state: z.enum(["paused", "running", "ended"]),
   })
   .strict();
+const missionEvidenceSchema = z.object({
+  version: z.literal(2),
+  checks: z.tuple([z.boolean(), z.boolean(), z.boolean()]),
+  answer: z.number().int().min(0).max(2).nullable(),
+  reflection: text,
+  completedAt: iso.nullable(),
+}).strict();
+export type MissionEvidence = z.infer<typeof missionEvidenceSchema>;
 const attemptSchema = z
   .object({
     id: uuid,
@@ -103,11 +113,12 @@ const attemptSchema = z
     readiness: z.enum(["exploring", "repeat", "teacher"]),
     journal: text,
     updatedAt: iso,
+    missions: z.record(z.string(), missionEvidenceSchema).default({}),
   })
   .strict();
 export const progressSchema = z
   .object({
-    schemaVersion: z.literal(1),
+    schemaVersion: z.literal(2),
     revision: z.number().int().nonnegative(),
     commitId: uuid,
     updatedAt: iso,
@@ -126,6 +137,12 @@ export const progressSchema = z
     for (const attempt of state.attempts) {
       if (ids.has(attempt.id)) issue("Duplicate attempt ID.");
       ids.add(attempt.id);
+      if (Object.keys(attempt.missions).length > 10) issue('Too many technical mission records.');
+      for (const [id, evidence] of Object.entries(attempt.missions)) {
+        const mission = missionByHour[id];
+        if (!Object.hasOwn(missionByHour, id) || mission.gradeId !== attempt.gradeId) issue('Invalid technical mission ID.');
+        else if (evidence.completedAt && !missionComplete(evidence, mission)) issue('Completed technical mission requires valid evidence and a correct scenario answer.');
+      }
       if (checkpointById[attempt.cursor]?.gradeId !== attempt.gradeId)
         issue("Cursor belongs to another grade.");
       const dayIds = new Set<string>();
@@ -226,7 +243,7 @@ export type CompletionRecord = LearningDay["records"][string];
 
 export function emptyProgress(): Progress {
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     revision: 0,
     commitId: crypto.randomUUID(),
     updatedAt: new Date().toISOString(),
@@ -273,6 +290,7 @@ export function makeAttempt(
     gradeId,
     createdAt: new Date(now).toISOString(),
     updatedAt: new Date(now).toISOString(),
+    missions: {},
     days: [makeDay(gradeId, settings, now)],
     cursor: gradeCheckpoints(gradeId)[0].id,
     timer: null,
@@ -296,6 +314,7 @@ export function counts(attempt?: Attempt | null) {
     skipped: records.filter((r) => r.outcome === "skipped").length,
     discomfort: records.filter((r) => r.outcome === "discomfort").length,
     total: records.length,
+    missionsCompleted: Object.values(attempt?.missions ?? {}).filter(m => m.completedAt).length,
     learningMs: attempt?.days.reduce((sum, d) => sum + d.learningMs, 0) ?? 0,
     trialMs: attempt?.days.reduce((sum, d) => sum + d.activeTrialMs, 0) ?? 0,
     completedTrialMs: records
@@ -322,6 +341,7 @@ export function saveOutcome(
     note,
     side,
     attendance,
+    curriculumVersion: CHALLENGE_VERSION,
     recordedAt: new Date(now).toISOString(),
     activeTrialMs: attempt.timer?.activeMs ?? 0,
   };
@@ -339,7 +359,10 @@ export function saveOutcome(
 export function parseProgress(raw: string): Progress {
   if (new TextEncoder().encode(raw).length > 5 * 1024 * 1024)
     throw new Error("Progress files must be smaller than 5 MB.");
-  const parsed = progressSchema.safeParse(JSON.parse(raw));
+  const imported = JSON.parse(raw);
+  // Version 1 outcomes retain their original identities; new mission evidence starts empty.
+  if (imported && typeof imported === 'object' && imported.schemaVersion === 1) imported.schemaVersion = 2;
+  const parsed = progressSchema.safeParse(imported);
   if (!parsed.success)
     throw new Error(
       `Invalid progress file: ${parsed.error.issues[0]?.message ?? "schema mismatch"}`,
@@ -354,6 +377,16 @@ export function restoreProgress(state: Progress): Progress {
       timer: a.timer ? restoreTimer(a.timer as TrialTimer) : null,
     })),
   };
+}
+export function emptyMissionEvidence(): MissionEvidence {
+  return { version: 2, checks: [false, false, false], answer: null, reflection: '', completedAt: null };
+}
+export function saveMissionEvidence(attempt: Attempt, hourId: string, evidence: MissionEvidence, submit = false, now = Date.now()): Attempt {
+  const mission = missionByHour[hourId];
+  if (!Object.hasOwn(missionByHour, hourId) || mission.gradeId !== attempt.gradeId) throw new Error('This mission does not belong to the selected grade.');
+  if (attempt.missions[hourId]?.completedAt) return attempt;
+  if (submit && !missionComplete(evidence, mission)) throw new Error('Complete the three evidence prompts, answer the scenario correctly, and write at least 40 characters.');
+  return { ...attempt, updatedAt: new Date(now).toISOString(), missions: { ...attempt.missions, [hourId]: { ...evidence, version: 2, completedAt: submit ? new Date(now).toISOString() : null } } };
 }
 export function mergeProgress(local: Progress, incoming: Progress): Progress {
   const merged = new Map(local.attempts.map((a) => [a.id, a]));
@@ -398,6 +431,10 @@ export function mergeProgress(local: Progress, incoming: Progress): Progress {
     }
     merged.set(other.id, {
       ...latest,
+      missions: Object.fromEntries([...new Set([...Object.keys(other.missions), ...Object.keys(current.missions)])].map(id => {
+        const here = current.missions[id]; const there = other.missions[id];
+        return [id, here?.completedAt ? here : there?.completedAt ? there : latest.missions[id] ?? here ?? there];
+      })),
       journal:
         current.journal === other.journal ||
         current.journal.includes(other.journal)

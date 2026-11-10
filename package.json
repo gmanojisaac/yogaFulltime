@@ -1,0 +1,20 @@
+{
+  "name": "yoga-fulltime",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimal Node.js starter for Yoga Fulltime.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gmanojisaac/yogaFulltime.git"
+  }
+}
